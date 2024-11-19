@@ -3775,7 +3775,7 @@ textarea.form-control-lg {
   color: var(--bs-navbar-brand-color);
   text-decoration: none;
   white-space: nowrap;
-  background-image: url(../assets/tucosat-logo-white.png); /* Ruta del logo */
+  background-image: url("/assets/tucosat-logo-white.png"); /* Ruta del logo */
   background-size: contain; 
   background-repeat: no-repeat; 
   background-position: center; 
@@ -10907,7 +10907,7 @@ hr.divider-light {
 
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
-    background-image: url(../assets/tucosat-logo-white.png);
+    background-image: url("/assets/tucosat-logo-white.png");
     background-size: contain; /* Asegura que la imagen se ajuste sin distorsión */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen en su contenedor */
@@ -10937,7 +10937,7 @@ hr.divider-light {
   }
 
   #mainNav.navbar-shrink .navbar-brand {
-    background-image: url(../assets/tucosat-logo-black.png); /* Cambia al logo negro */
+    background-image: url("/assets/tucosat-logo-black.png"); /* Cambia al logo negro */
     color: #212529; /* Color del texto negro */
   }
 
