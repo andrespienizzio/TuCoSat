@@ -3766,6 +3766,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
 }
+
 .navbar-brand {
   padding-top: var(--bs-navbar-brand-padding-y);
   padding-bottom: var(--bs-navbar-brand-padding-y);
@@ -3774,7 +3775,16 @@ textarea.form-control-lg {
   color: var(--bs-navbar-brand-color);
   text-decoration: none;
   white-space: nowrap;
+  background-image: url('./assets/tucosat-logo-white.png'); /* Ruta del logo */
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  width: 50%; 
+  height: 50%; 
+  display: inline-block; 
 }
+
+
 .navbar-brand:hover, .navbar-brand:focus {
   color: var(--bs-navbar-brand-hover-color);
 }
@@ -3954,7 +3964,6 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
-    justify-content: flex-start;
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
@@ -3972,6 +3981,8 @@ textarea.form-control-lg {
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
+    justify-content: space-between;
+    align-items: stretch;
   }
   .navbar-expand-lg .navbar-toggler {
     display: none;
@@ -10887,42 +10898,59 @@ hr.divider-light {
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #48CFCB !important;
 }
+
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
     background-color: transparent;
   }
+
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
+    background-image: url(/assets/tucosat-logo-white.png);
+    background-size: contain; /* Asegura que la imagen se ajuste sin distorsión */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en su contenedor */
+    width: 15rem; /* Fija el ancho del contenedor */
+    height: 3rem; /* Fija la altura del contenedor */
+    display: inline-block; /* Mantiene el logo en línea con otros elementos */
+    text-indent: -9999px; /* Oculta el texto */
   }
+
   #mainNav .navbar-brand:hover {
     color: #fff;
   }
+
   #mainNav .navbar-nav .nav-item .nav-link {
-    color: #fff;
+    color: #fff; /* Color del texto en estado normal */
     padding: 0 1rem;
+    transition: color 0.3s ease; /* Transición suave para el color */
   }
+
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7); /* Color del texto al pasar el mouse en estado normal */
   }
-  #mainNav .navbar-nav .nav-item:last-child .nav-link {
-    padding-right: 0;
-  }
+
   #mainNav.navbar-shrink {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #fff;
+    background-color: #fff; /* Fondo blanco al reducir */
   }
+
   #mainNav.navbar-shrink .navbar-brand {
-    color: #212529;
+    background-image: url(/assets/tucosat-logo-black.png); /* Cambia al logo negro */
+    color: #212529; /* Color del texto negro */
   }
+
   #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #48CFCB;
+    color: #48CFCB; /* Celeste al pasar el mouse */
   }
+
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
-    color: #212529;
+    color: #000; /* Texto negro cuando la barra es blanca */
   }
+
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
-    color: #48CFCB;
+    color: #565e64; /* Texto gris al pasar el mouse */
   }
 }
 
@@ -10992,8 +11020,4 @@ header.masthead h1, header.masthead .h1 {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
-}
-
-#logo-navbar {
-  max-width: 10rem  !important; 
 }
